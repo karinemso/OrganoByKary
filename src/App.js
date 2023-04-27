@@ -3,11 +3,15 @@ import { useState } from 'react';
 import { Banner } from './components/Banner/Banner';
 import Formulario from './components/Formulario';
 import Time from './components/Time';
+import Footer from './components/Footer';
 
 
 function App() {
 
   const times = [
+    {nome: '---',
+    corPrimaria: '#82CFFA',
+    corSecundaria: '#E8F8FF',},
     {
       nome: 'Front-End',
       corPrimaria: '#82CFFA',
@@ -58,6 +62,7 @@ function App() {
       corSecundaria = {time.corSecundaria}
       colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       ></Time>)}
+      <Footer></Footer>
      
      
     </div>

@@ -12,7 +12,7 @@ const Formulario = (props) => {
     const [nome,setNome] = useState('')
     const [cargo,setCargo] = useState('')
     const [imagem,setImagem] = useState('')
-    const [time,setTime] = useState([])
+    const [time,setTime] = useState('')
 
     const aoSalvar = (e) => {
         e.preventDefault()
@@ -49,7 +49,7 @@ const Formulario = (props) => {
                 aoAlterado = {valor => setCargo(valor)} />
                 <CampoTexto 
                 label='Imagem' 
-                placeholder='Digite o seu user do github + .png'
+                placeholder='Digite o seu user do github'
                 valor = {imagem}
                 aoAlterado = {valor => setImagem(valor)} />
                 <ListaSuspensa
