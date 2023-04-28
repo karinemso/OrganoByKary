@@ -1,6 +1,6 @@
 import './Colaborador.css'
 
-const Colaborador = ({nome, cargo, imagem, background, aoDeletar}) => {
+const Colaborador = ({ id,nome, cargo, imagem, background, aoDeletar}) => {
     return (
         <div className='colaborador'>
             <div className='deletar' onClick={aoDeletar}>X</div>

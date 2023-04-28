@@ -3,7 +3,7 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
-
+import { v4 as uuidv4 } from "uuid";
 
 const Formulario = (props) => {
 
@@ -17,6 +17,7 @@ const Formulario = (props) => {
     const aoSalvar = (e) => {
         e.preventDefault()
         props.aoColaboradorCadastrado({
+            id: uuidv4(),
             nome,
             cargo,
             imagem,
@@ -38,7 +39,7 @@ const Formulario = (props) => {
                  label='Nome' 
                  placeholder='Digite seu nome'
                  valor = {nome}
-                 aoAlterado = {valor => setNome(valor)}
+                 aoAlterado = {valor => {setNome(valor)}}
                   />
 
                 <CampoTexto 
