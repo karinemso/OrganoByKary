@@ -1,5 +1,6 @@
 .colaborador {
     width: 280px;
+    position: relative;
 }
 
 .colaborador .cabecalho {
@@ -18,6 +19,9 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .colaborador .rodape h4 {
@@ -33,4 +37,24 @@
     line-height: 22px;
     color: #212121;
     padding: 0 16px;
+}
+
+.deletar {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5em 0.7em;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+.heart{
+width: 2em;
+    height: 2em;
+    text-align: center;
 }
